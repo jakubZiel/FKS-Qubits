@@ -6,7 +6,7 @@
 \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage[export]{adjustbox}
-
+\usepackage{scalerel}
 
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 \DeclarePairedDelimiter\bra{\langle}{\rvert} 
@@ -34,7 +34,7 @@
 		
 		\begin{block}{Notacja Diraca, "bra-ket"}
 			\vspace{0.5em}
-			Używana do opisu wektorów z tzw. przestrzeni dualnej ($\bra{bra}$ jest hermitowskim sprzężeniem $\ket{ket}$).\\~\\
+			Używana do opisu wektorów z tzw. przestrzeni Hilberta ($\bra{bra}$ jest hermitowskim sprzężeniem $\ket{ket}$).\\~\\
 			Jeżeli $\ket{ket}$ jest wektorem kolumnowym \\~\\
 			\centering
 			$
@@ -68,7 +68,7 @@
 	\end{frame}
 	
 	\begin{frame}
-		\begin{block}{Przykład nr 1}
+		\begin{block}{Przykład nr 1 - Rozkład w bazie}
 			\vspace{0.5em}
 			Wektor w bazie o wymiarze $n=3$ możemy zapisać w następujący sposób:
 				\begin{equation*}
@@ -79,14 +79,14 @@
 			\vspace{0.5em}
 		\end{block}
 	
-		\begin{block}{Przykład nr 2}
+		\begin{block}{Przykład nr 2 - Rzutowanie}
 			\vspace{0.5em}
 			Weźmy wektor  $\ket{V} = \sum\limits_{i=1}^n \alpha_{i}\ket{v_{i}}$.\\~\\
-			Rzutujmy wektor $\ket{V}$ na wektor bazowy $\ket{v_{1}}$.\\~\\
+			Rzutujmy wektor $\ket{V}$ na ortonormalny wektor bazowy $\ket{v_{1}}$.\\~\\
 			$\ket{v_{1}}\bra{v_{1}}\ket{V}=
-			\alpha_{1}\ket{v_{1}}\braket{v_{1}}{v_{1}} +
-			 \alpha_{2}\ket{v_{1}}\braket{v_{1}}{v_{2}} +...+
-			 \alpha_{n}\ket{v_{1}}\braket{v_{1}}{v_{n}} 
+			\alpha_{1}\ket{v_{1}}\overbrace{\braket{v_{1}}{v_{1}}}^{1} +
+			 \alpha_{2}\ket{v_{1}}\overbrace{\braket{v_{1}}{v_{2}}}^{0} +...+
+			 \alpha_{n}\ket{v_{1}}\overbrace{\braket{v_{1}}{v_{n}}}^{0} 
 			$\\~\\
 			Otrzymujemy $\ket{v_{1}}\bra{v_{1}}\ket{V}= \alpha_{1}\ket{v_{1}}\braket{v_{1}}{v_{1}}=\alpha_{1}\ket{v_{1}}$
 			
@@ -178,6 +178,12 @@
 			\end{multicols}
 			\vspace{0.5em}
 		\end{block}
+	
+		\begin{center}
+			\begin{figure}
+				\includegraphics[scale=0.53]{media/qubits.jpeg}
+			\end{figure}
+		\end{center}
 	\end{frame}
 
 	\begin{frame}{Bramki kwantowe}
@@ -551,7 +557,7 @@
 	\only<1>{
 	\begin{block}{Krok nr 1}	
 		\vspace{0.5em}
-		Splątanie kubitów w laboratorium i przekazanie kubitów do punktów A i B.
+		Splątanie kubitów $\ket{0_{\scaleto{A\mathstrut}{4pt}}}$ i $\ket{0_{\scaleto{B\mathstrut}{4pt}}}$w laboratorium i przekazanie ich do punktów A i B.
 		\begin{figure}[h]
 			\includegraphics[scale=0.55]{media/entangeling.png}
 		\end{figure}
@@ -986,7 +992,7 @@
 		\vspace{0.5em}
 		\begin{center}
 			\begin{figure}
-				\includegraphics[scale=0.35]{media/visualization6.png}
+				\includegraphics[scale=0.28]{media/visualization6.png}
 			\end{figure}
 		\end{center}
 		\vspace{0.5em}
@@ -997,7 +1003,7 @@
 		\vspace{0.5em}
 		\begin{center}
 			\begin{figure}
-				\includegraphics[scale=0.35]{media/visualization7.png}
+				\includegraphics[scale=0.28]{media/visualization7.png}
 			\end{figure}
 		\end{center}
 		\vspace{0.5em}

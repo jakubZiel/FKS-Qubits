@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.10)  28 AUG 2020 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.10)  30 AUG 2020 23:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -805,6 +805,17 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen307
 \@vwid@roff=\dimen308
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+\thesrwidth=\skip69
+\thesrheight=\skip70
+\srblobheight=\skip71
+\srblobdepth=\skip72
+\mnxsrwidth=\skip73
+\LMex=\skip74
+\LMpt=\skip75
+)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty
@@ -1035,37 +1046,43 @@ Overfull \hbox (1.42442pt too wide) in paragraph at lines 156--156
 
 [8
 
- <./media/foton_pomiar.png>] [9
+ <./media/foton_pomiar.png>]
+<media/qubits.jpeg, id=261, 294.09875pt x 172.645pt>
+File: media/qubits.jpeg Graphic file (type jpg)
+<use media/qubits.jpeg>
+Package pdftex.def Info: media/qubits.jpeg  used on input line 187.
+(pdftex.def)             Requested size: 155.87158pt x 91.5014pt.
+ [9
 
-]
-<media/bramkaHadamarda.png, id=287, 346.29375pt x 146.5475pt>
+ <./media/qubits.jpeg>]
+<media/bramkaHadamarda.png, id=288, 346.29375pt x 146.5475pt>
 File: media/bramkaHadamarda.png Graphic file (type png)
 <use media/bramkaHadamarda.png>
-Package pdftex.def Info: media/bramkaHadamarda.png  used on input line 223.
+Package pdftex.def Info: media/bramkaHadamarda.png  used on input line 229.
 (pdftex.def)             Requested size: 77.56926pt x 32.8264pt.
  [10
 
  <./media/bramkaHadamarda.png>]
-<media/bramkaX.png, id=315, 121.6545pt x 79.497pt>
+<media/bramkaX.png, id=316, 121.6545pt x 79.497pt>
 File: media/bramkaX.png Graphic file (type png)
 <use media/bramkaX.png>
-Package pdftex.def Info: media/bramkaX.png  used on input line 265.
+Package pdftex.def Info: media/bramkaX.png  used on input line 271.
 (pdftex.def)             Requested size: 80.2922pt x 52.46817pt.
  [11
 
  <./media/bramkaX.png>]
-<media/bramkaY.png, id=343, 115.632pt x 76.48575pt>
+<media/bramkaY.png, id=344, 115.632pt x 76.48575pt>
 File: media/bramkaY.png Graphic file (type png)
 <use media/bramkaY.png>
-Package pdftex.def Info: media/bramkaY.png  used on input line 331.
+Package pdftex.def Info: media/bramkaY.png  used on input line 337.
 (pdftex.def)             Requested size: 57.81586pt x 38.24277pt.
-<media/bramkaZ.png, id=344, 110.21175pt x 77.088pt>
+<media/bramkaZ.png, id=345, 110.21175pt x 77.088pt>
 File: media/bramkaZ.png Graphic file (type png)
 <use media/bramkaZ.png>
-Package pdftex.def Info: media/bramkaZ.png  used on input line 331.
+Package pdftex.def Info: media/bramkaZ.png  used on input line 337.
 (pdftex.def)             Requested size: 55.10573pt x 38.5439pt.
 
-Overfull \vbox (0.79265pt too high) detected at line 331
+Overfull \vbox (0.79265pt too high) detected at line 337
  []
 
 [12
@@ -1075,20 +1092,20 @@ Overfull \vbox (0.79265pt too high) detected at line 331
 ] [14
 
 ]
-<media/cnotGate.png, id=427, 290.08376pt x 175.65625pt>
+<media/cnotGate.png, id=428, 290.08376pt x 175.65625pt>
 File: media/cnotGate.png Graphic file (type png)
 <use media/cnotGate.png>
-Package pdftex.def Info: media/cnotGate.png  used on input line 442.
+Package pdftex.def Info: media/cnotGate.png  used on input line 448.
 (pdftex.def)             Requested size: 58.01572pt x 35.13062pt.
  [15
 
  <./media/cnotGate.png>] [16
 
 ]
-<media/EPR_circuit.jpeg, id=482, 127.06813pt x 63.13698pt>
+<media/EPR_circuit.jpeg, id=483, 127.06813pt x 63.13698pt>
 File: media/EPR_circuit.jpeg Graphic file (type jpg)
 <use media/EPR_circuit.jpeg>
-Package pdftex.def Info: media/EPR_circuit.jpeg  used on input line 494.
+Package pdftex.def Info: media/EPR_circuit.jpeg  used on input line 500.
 (pdftex.def)             Requested size: 127.06781pt x 63.13681pt.
  [17
 
@@ -1097,101 +1114,101 @@ Package pdftex.def Info: media/EPR_circuit.jpeg  used on input line 494.
 ] [19
 
 ]
-<media/entangeling.png, id=562, 296.307pt x 121.05225pt>
+<media/entangeling.png, id=563, 296.307pt x 121.05225pt>
 File: media/entangeling.png Graphic file (type png)
 <use media/entangeling.png>
-Package pdftex.def Info: media/entangeling.png  used on input line 623.
+Package pdftex.def Info: media/entangeling.png  used on input line 629.
 (pdftex.def)             Requested size: 162.96935pt x 66.57893pt.
  [20
 
  <./media/entangeling.png>] [21
 
 ]
-<media/reverseEntagler.png, id=620, 198.7425pt x 98.16675pt>
+<media/reverseEntagler.png, id=621, 198.7425pt x 98.16675pt>
 File: media/reverseEntagler.png Graphic file (type png)
 <use media/reverseEntagler.png>
-Package pdftex.def Info: media/reverseEntagler.png  used on input line 623.
+Package pdftex.def Info: media/reverseEntagler.png  used on input line 629.
 (pdftex.def)             Requested size: 139.11879pt x 68.71625pt.
  [22
 
  <./media/reverseEntagler.png>]
-<media/denseCodingCircuit.png, id=647, 373.99725pt x 123.46124pt>
+<media/denseCodingCircuit.png, id=648, 373.99725pt x 123.46124pt>
 File: media/denseCodingCircuit.png Graphic file (type png)
 <use media/denseCodingCircuit.png>
-Package pdftex.def Info: media/denseCodingCircuit.png  used on input line 623.
+Package pdftex.def Info: media/denseCodingCircuit.png  used on input line 629.
 (pdftex.def)             Requested size: 168.2972pt x 55.55704pt.
-<media/denseCodingPropability.png, id=648, 133.09724pt x 178.86826pt>
+<media/denseCodingPropability.png, id=649, 133.09724pt x 178.86826pt>
 File: media/denseCodingPropability.png Graphic file (type png)
 <use media/denseCodingPropability.png>
 Package pdftex.def Info: media/denseCodingPropability.png  used on input line 6
-23.
+29.
 (pdftex.def)             Requested size: 43.92221pt x 59.0267pt.
  [23
 
  <./media/denseCodingCircuit.png> <./media/denseCodingPropability.png>] [24
 
 ]
-<media/teleportationStep1.png, id=705, 146.79843pt x 117.43875pt>
+<media/teleportationStep1.png, id=706, 146.79843pt x 117.43875pt>
 File: media/teleportationStep1.png Graphic file (type png)
 <use media/teleportationStep1.png>
-Package pdftex.def Info: media/teleportationStep1.png  used on input line 774.
+Package pdftex.def Info: media/teleportationStep1.png  used on input line 780.
 (pdftex.def)             Requested size: 73.39903pt x 58.71922pt.
  [25
 
  <./media/teleportationStep1.png>]
-<media/bellStateMeasurement.jpeg, id=734, 225.84375pt x 123.46124pt>
+<media/bellStateMeasurement.jpeg, id=735, 225.84375pt x 123.46124pt>
 File: media/bellStateMeasurement.jpeg Graphic file (type jpg)
 <use media/bellStateMeasurement.jpeg>
-Package pdftex.def Info: media/bellStateMeasurement.jpeg  used on input line 77
-4.
+Package pdftex.def Info: media/bellStateMeasurement.jpeg  used on input line 78
+0.
 (pdftex.def)             Requested size: 101.62874pt x 55.55704pt.
  [26
 
  <./media/bellStateMeasurement.jpeg>]
-<media/teleportationStep3.png, id=761, 434.37282pt x 179.16937pt>
+<media/teleportationStep3.png, id=762, 434.37282pt x 179.16937pt>
 File: media/teleportationStep3.png Graphic file (type png)
 <use media/teleportationStep3.png>
-Package pdftex.def Info: media/teleportationStep3.png  used on input line 774.
+Package pdftex.def Info: media/teleportationStep3.png  used on input line 780.
 (pdftex.def)             Requested size: 217.18587pt x 89.58446pt.
  [27
 
  <./media/teleportationStep3.png>]
-<media/collapseExample.png, id=789, 784.1295pt x 384.83775pt>
+<media/collapseExample.png, id=790, 784.1295pt x 384.83775pt>
 File: media/collapseExample.png Graphic file (type png)
 <use media/collapseExample.png>
-Package pdftex.def Info: media/collapseExample.png  used on input line 774.
+Package pdftex.def Info: media/collapseExample.png  used on input line 780.
 (pdftex.def)             Requested size: 117.61435pt x 57.72316pt.
  [28
 
  <./media/collapseExample.png>]
-<media/QantumTeleportationCircuit.png, id=817, 736.7525pt x 218.8175pt>
+<media/QantumTeleportationCircuit.png, id=818, 736.7525pt x 218.8175pt>
 File: media/QantumTeleportationCircuit.png Graphic file (type png)
 <use media/QantumTeleportationCircuit.png>
 Package pdftex.def Info: media/QantumTeleportationCircuit.png  used on input li
-ne 774.
+ne 780.
 (pdftex.def)             Requested size: 184.18767pt x 54.70424pt.
  [29
 
  <./media/QantumTeleportationCircuit.png>] [30
 
 ]
-<media/classicSearch.png, id=870, 821.469pt x 144.54pt>
+<media/classicSearch.png, id=871, 821.469pt x 144.54pt>
 File: media/classicSearch.png Graphic file (type png)
 <use media/classicSearch.png>
-Package pdftex.def Info: media/classicSearch.png  used on input line 807.
+Package pdftex.def Info: media/classicSearch.png  used on input line 813.
 (pdftex.def)             Requested size: 205.36674pt x 36.1349pt.
  [31
 
  <./media/classicSearch.png>] [32
 
 ]
-<media/groverINIT.png, id=925, 575.751pt x 200.4288pt>
+<media/groverINIT.png, id=926, 575.751pt x 200.4288pt>
 File: media/groverINIT.png Graphic file (type png)
 <use media/groverINIT.png>
-Package pdftex.def Info: media/groverINIT.png  used on input line 831.
+Package pdftex.def Info: media/groverINIT.png  used on input line 837.
 (pdftex.def)             Requested size: 287.8748pt x 100.21414pt.
 
-Overfull \vbox (15.46077pt too high) detected at line 831
+Overfull \vbox (15.46077pt too high) detected at line 837
  []
 
 [33
@@ -1199,13 +1216,13 @@ Overfull \vbox (15.46077pt too high) detected at line 831
  <./media/groverINIT.png>] [34
 
 ]
-<media/grover_A.png, id=979, 598.3956pt x 237.0456pt>
+<media/grover_A.png, id=980, 598.3956pt x 237.0456pt>
 File: media/grover_A.png Graphic file (type png)
 <use media/grover_A.png>
-Package pdftex.def Info: media/grover_A.png  used on input line 889.
+Package pdftex.def Info: media/grover_A.png  used on input line 895.
 (pdftex.def)             Requested size: 269.27553pt x 106.66953pt.
 
-Overfull \vbox (11.7782pt too high) detected at line 889
+Overfull \vbox (11.7782pt too high) detected at line 895
  []
 
 [35
@@ -1213,22 +1230,22 @@ Overfull \vbox (11.7782pt too high) detected at line 889
  <./media/grover_A.png>]
 File: media/grover_A.png Graphic file (type png)
 <use media/grover_A.png>
-Package pdftex.def Info: media/grover_A.png  used on input line 889.
+Package pdftex.def Info: media/grover_A.png  used on input line 895.
 (pdftex.def)             Requested size: 269.27553pt x 106.66953pt.
 
-Overfull \vbox (9.72293pt too high) detected at line 889
+Overfull \vbox (9.72293pt too high) detected at line 895
  []
 
 [36
 
 ]
-<media/grover_B.png, id=1034, 621.522pt x 262.0992pt>
+<media/grover_B.png, id=1035, 621.522pt x 262.0992pt>
 File: media/grover_B.png Graphic file (type png)
 <use media/grover_B.png>
-Package pdftex.def Info: media/grover_B.png  used on input line 933.
+Package pdftex.def Info: media/grover_B.png  used on input line 939.
 (pdftex.def)             Requested size: 279.68231pt x 117.94354pt.
 
-Overfull \vbox (15.98108pt too high) detected at line 933
+Overfull \vbox (15.98108pt too high) detected at line 939
  []
 
 [37
@@ -1236,67 +1253,67 @@ Overfull \vbox (15.98108pt too high) detected at line 933
  <./media/grover_B.png>] [38
 
 ]
-<media/visualization1.png, id=1091, 774.64406pt x 570.63188pt>
+<media/visualization1.png, id=1092, 619.71526pt x 456.5055pt>
 File: media/visualization1.png Graphic file (type png)
 <use media/visualization1.png>
-Package pdftex.def Info: media/visualization1.png  used on input line 943.
-(pdftex.def)             Requested size: 271.12949pt x 199.72415pt.
+Package pdftex.def Info: media/visualization1.png  used on input line 949.
+(pdftex.def)             Requested size: 216.90358pt x 159.77931pt.
  [39
 
  <./media/visualization1.png>]
-<media/visualization2.png, id=1119, 765.6103pt x 564.60938pt>
+<media/visualization2.png, id=1120, 612.48825pt x 451.6875pt>
 File: media/visualization2.png Graphic file (type png)
 <use media/visualization2.png>
-Package pdftex.def Info: media/visualization2.png  used on input line 953.
-(pdftex.def)             Requested size: 267.96762pt x 197.61623pt.
+Package pdftex.def Info: media/visualization2.png  used on input line 959.
+(pdftex.def)             Requested size: 214.3741pt x 158.09299pt.
  [40
 
  <./media/visualization2.png>]
-<media/visualization3.png, id=1148, 766.36313pt x 566.115pt>
+<media/visualization3.png, id=1149, 613.0905pt x 452.892pt>
 File: media/visualization3.png Graphic file (type png)
 <use media/visualization3.png>
-Package pdftex.def Info: media/visualization3.png  used on input line 963.
-(pdftex.def)             Requested size: 268.23111pt x 198.14322pt.
+Package pdftex.def Info: media/visualization3.png  used on input line 969.
+(pdftex.def)             Requested size: 214.58488pt x 158.51457pt.
  [41
 
  <./media/visualization3.png>]
-<media/visualization4.png, id=1176, 767.11594pt x 566.115pt>
+<media/visualization4.png, id=1177, 613.69275pt x 452.892pt>
 File: media/visualization4.png Graphic file (type png)
 <use media/visualization4.png>
-Package pdftex.def Info: media/visualization4.png  used on input line 973.
-(pdftex.def)             Requested size: 268.4946pt x 198.14322pt.
+Package pdftex.def Info: media/visualization4.png  used on input line 979.
+(pdftex.def)             Requested size: 214.79567pt x 158.51457pt.
  [42
 
  <./media/visualization4.png>]
-<media/visualization5.png, id=1204, 764.8575pt x 565.36218pt>
+<media/visualization5.png, id=1205, 611.886pt x 452.28975pt>
 File: media/visualization5.png Graphic file (type png)
 <use media/visualization5.png>
-Package pdftex.def Info: media/visualization5.png  used on input line 983.
-(pdftex.def)             Requested size: 267.70413pt x 197.87971pt.
+Package pdftex.def Info: media/visualization5.png  used on input line 989.
+(pdftex.def)             Requested size: 214.1633pt x 158.30379pt.
  [43
 
  <./media/visualization5.png>]
-<media/visualization6.png, id=1233, 767.11594pt x 565.36218pt>
+<media/visualization6.png, id=1234, 767.11594pt x 565.36218pt>
 File: media/visualization6.png Graphic file (type png)
 <use media/visualization6.png>
-Package pdftex.def Info: media/visualization6.png  used on input line 993.
-(pdftex.def)             Requested size: 268.4946pt x 197.87971pt.
+Package pdftex.def Info: media/visualization6.png  used on input line 999.
+(pdftex.def)             Requested size: 214.79099pt x 158.30032pt.
  [44
 
  <./media/visualization6.png>]
-<media/visualization7.png, id=1262, 758.835pt x 563.10374pt>
+<media/visualization7.png, id=1263, 758.835pt x 563.10374pt>
 File: media/visualization7.png Graphic file (type png)
 <use media/visualization7.png>
-Package pdftex.def Info: media/visualization7.png  used on input line 1004.
-(pdftex.def)             Requested size: 265.59624pt x 197.08926pt.
+Package pdftex.def Info: media/visualization7.png  used on input line 1010.
+(pdftex.def)             Requested size: 212.47235pt x 157.66797pt.
 
 [45
 
  <./media/visualization7.png>]
-<media/groverCircuit.png, id=1290, 435.6275pt x 116.435pt>
+<media/groverCircuit.png, id=1291, 435.6275pt x 116.435pt>
 File: media/groverCircuit.png Graphic file (type png)
 <use media/groverCircuit.png>
-Package pdftex.def Info: media/groverCircuit.png  used on input line 1023.
+Package pdftex.def Info: media/groverCircuit.png  used on input line 1029.
 (pdftex.def)             Requested size: 239.59586pt x 64.03944pt.
  [46
 
@@ -1319,20 +1336,20 @@ Package pdftex.def Info: media/groverCircuit.png  used on input line 1023.
 \tf@snm=\write8
 \openout8 = `FKS-Qubits.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1063.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1063.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1069.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1069.
  (./FKS-Qubits.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1063.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1063.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1069.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1069.
 
 Package rerunfilecheck Info: File `FKS-Qubits.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19987 strings out of 483183
- 376182 string characters out of 5966292
- 648042 words of memory out of 5000000
- 34373 multiletter control sequences out of 15000+600000
+ 20052 strings out of 483183
+ 377105 string characters out of 5966292
+ 649364 words of memory out of 5000000
+ 34433 multiletter control sequences out of 15000+600000
  547704 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  54i,19n,66p,801b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1354,10 +1371,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msam10.pfb>
-Output written on FKS-Qubits.pdf (50 pages, 741974 bytes).
+Output written on FKS-Qubits.pdf (50 pages, 745536 bytes).
 PDF statistics:
- 1749 PDF objects out of 2073 (max. 8388607)
+ 1750 PDF objects out of 2073 (max. 8388607)
  1365 compressed objects within 14 object streams
  101 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
