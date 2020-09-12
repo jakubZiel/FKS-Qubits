@@ -7,6 +7,8 @@
 \usepackage{multicol}
 \usepackage[export]{adjustbox}
 \usepackage{scalerel}
+\usepackage{graphicx}
+\usepackage{pdfpages}
 
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 \DeclarePairedDelimiter\bra{\langle}{\rvert} 
@@ -34,8 +36,10 @@
 		
 		\begin{block}{Notacja Diraca, "bra-ket"}
 			\vspace{0.5em}
-			Używana do opisu wektorów z tzw. przestrzeni Hilberta ($\bra{bra}$ jest hermitowskim sprzężeniem $\ket{ket}$).\\~\\
-			Jeżeli $\ket{ket}$ jest wektorem kolumnowym \\~\\
+			Używana do opisu wektorów z tzw. \href{https://en.wikipedia.org/wiki/Hilbert_space}{przestrzeni Hilberta} oraz przy korzystaniu z operatora \href{https://en.wikipedia.org/wiki/Conjugate_transpose}{sprzężenia hermitowskiego}:
+			 $\ket{ket}\longrightarrow\bra{ket}$ 
+			\\~\\
+			gdzie $\ket{ket}$ jest wektorem kolumnowym \\~\\
 			\centering
 			$
 			\begin{pmatrix}
@@ -44,11 +48,11 @@
 			^{T}
 			$\\~\\
 			\flushleft
-			to $\bra{bra}$ jest wektorem w postaci rzędu\\~\\ 
+			$\bra{ket}$ jest wektorem w postaci rzędu\\~\\ 
 			\centering
 			$
 			\begin{pmatrix}
-			\beta_{1} &\beta_{2} & \cdots &\beta_{n-1} &\beta_{n} 
+			\alpha_{1}^{\ast} &\alpha_{2}^{\ast} & \cdots &\alpha_{n-1}^{\ast} &\alpha_{n}^{\ast} 
 			\end{pmatrix}
 			$
 			\vspace{0.5em}
@@ -81,14 +85,14 @@
 	
 		\begin{block}{Przykład nr 2 - Rzutowanie}
 			\vspace{0.5em}
-			Weźmy wektor  $\ket{V} = \sum\limits_{i=1}^n \alpha_{i}\ket{v_{i}}$.\\~\\
+			Weźmy wektor  $\ket{V} = \sum\limits_{i=1}^n \alpha_{i}\ket{v_{i}}$\\~\\ 
 			Rzutujmy wektor $\ket{V}$ na ortonormalny wektor bazowy $\ket{v_{1}}$.\\~\\
 			$\ket{v_{1}}\bra{v_{1}}\ket{V}=
 			\alpha_{1}\ket{v_{1}}\overbrace{\braket{v_{1}}{v_{1}}}^{1} +
 			 \alpha_{2}\ket{v_{1}}\overbrace{\braket{v_{1}}{v_{2}}}^{0} +...+
 			 \alpha_{n}\ket{v_{1}}\overbrace{\braket{v_{1}}{v_{n}}}^{0} 
 			$\\~\\
-			Otrzymujemy $\ket{v_{1}}\bra{v_{1}}\ket{V}= \alpha_{1}\ket{v_{1}}\braket{v_{1}}{v_{1}}=\alpha_{1}\ket{v_{1}}$
+			Otrzymujemy $\ket{v_{1}}\braket{v_{1}}{V}= \alpha_{1}\ket{v_{1}}\braket{v_{1}}{v_{1}}=\alpha_{1}\ket{v_{1}}$
 			
 			\vspace{0.5em}
 		\end{block}
@@ -102,7 +106,7 @@
 		\begin{equation*}
 			\ket{\psi_{0}} = \alpha\ket{0} + \beta\ket{1}
 		\end{equation*}
-		Gdzie $\alpha^{2}$ i $\beta^{2}$ są prawdopodobieństwami wystąpienia odpowiednich stanów własnych oraz $$\lVert\alpha\rVert^{2} + \lVert\beta\rVert^{2} = 1$$
+		Gdzie $\lVert\alpha\rVert^{2}$ i $\lVert\beta\rVert^{2}$ są prawdopodobieństwami wystąpienia odpowiednich stanów własnych oraz $$\lVert\alpha\rVert^{2} + \lVert\beta\rVert^{2} = 1$$
 		
 		\vspace{0.5em}
 		\end{block}			
@@ -112,7 +116,7 @@
 	\begin{frame}{}
 		\begin{block}{Sfera Blocha}
 			\vspace{0.5em}
-			Kubit może być również przy pomocy funkcji trygonometrycznych.
+			Kubit może być również opisany przy pomocy funkcji trygonometrycznych.
 			\begin{equation*}
 			\ket{\psi_{0}} = \cos{\frac{\theta}{2}}\ket{0} + e^{i\phi}\sin{\frac{\theta}{2}}\ket{1} 
 			\end{equation*}
@@ -453,7 +457,7 @@
 			\vspace{0.5em}
 			\begin{enumerate}
 			\item Stanu układu nie da się "rozsupłać".
-			\item Zmiana jednego z kubitów wpływa na drugi.
+			\item Zmiana stanu jednego z kubitów wpływa na drugi.
 			\item Wystarczy zmierzyć jeden z kubitów, by poznać stan obu.
 			\end{enumerate}
 			\vspace{0.5em}
@@ -816,7 +820,16 @@
 		\begin{block}{Podejście "kwantowe"}
 			\vspace{0.5em}
 			Algorytm bazuje na iteracyjnym "wzmacnianiu amplitudy" prawdopodobieństwa szukanego stanu $\ket{x_s}$.
-			Proces osiągamy poprzez odpowiednie manipulowanie rejestrem kwantowym.
+			Proces osiągamy poprzez odpowiednie manipulowanie rejestrem kwantowym.\\~\\
+			
+			\begin{enumerate}
+				
+				\item[1] Przygotowanie rejestru
+				\item[2] "Oracle" wskazuje szukany element
+				\item[2] Wzmacniamy amplitudę szukanego elementu
+				\item[3] Pomiar
+								
+			\end{enumerate}
 			\vspace{0.5em}
 		\end{block}
 	\end{frame}
@@ -827,7 +840,7 @@
 			Niech rejestr kwantowy będzie dany funkcją falową : 
 			$$\ket{\phi_{0}} = \frac{1}{\sqrt{N}}\sum\limits_{i=1}^{N-1}\ket{\omega_{i}} $$
 			gdzie $N = 2^{n},$ a n to ilość kubitów.\\ \vspace{0.4em}
-			Wybieramy taką postać wejściową, ponieważ nie faworyzuje żadnego ze stanów. 
+			Wybieramy taką postać wejściową, ponieważ nie faworyzuje żadnego ze stanów bazowych. 
 		\end{block}
 		\begin{center}
 			\begin{figure}
@@ -921,9 +934,9 @@
 				na rejestr kwantowy:
 				\begin{align*}
 					\mathcal{B}\ket{\phi} &= \mathcal{B}\big(\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}\ket{\omega}\big)= \sum\limits_{\omega=0}^{N-1}\alpha_{\omega}\big(\frac{2}{\sqrt{N}}\ket{\phi_{0}}-\ket{\omega}\big)\\
-					&=\frac{2}{\sqrt{N}}=\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}\Big(\frac{1}{\sqrt{N}}\sum\limits_{\omega=0}^{N-1}\ket{\omega}\Big)-
+					&=\frac{2}{\sqrt{N}}\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}\Big(\frac{1}{\sqrt{N}}\sum\limits_{\omega=0}^{N-1}\ket{\omega}\Big)-
 					\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}\ket{\omega}\\
-					&=\underbrace{\frac{2}{N}\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}}_{\alpha_{avg}}\sum\limits_{\omega=0}^{N-1}\ket{\omega}-\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}\ket{\omega}\\
+					&=2\underbrace{\frac{1}{N}\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}}_{\alpha_{avg}}\sum\limits_{\omega=0}^{N-1}\ket{\omega}-\sum\limits_{\omega=0}^{N-1}\alpha_{\omega}\ket{\omega}\\
 					&=\sum\limits_{\omega=0}^{N-1}\big(2\alpha_{avg}-\alpha_{\omega}\big)\ket{\omega}=\sum\limits_{\omega=0}^{N-1}\Big(\alpha_{avg} + (\alpha_{avg}-\alpha_{\omega})\Big)\ket{\omega}
 				\end{align*}
 			}
@@ -1033,7 +1046,50 @@
 	\end{frame}
 	
 	\begin{frame}{Praktyczne zastosowanie}
-		
+			
+			\begin{columns}
+				\begin{column}{0.5\textwidth}
+					\begin{center}
+						\begin{block}{}
+							Jeżeli przygotujemy "Oracle", który bedzię miał do danych recordu, naturalnym jest użycie algorytmu przy obsłudze baz danych.
+						\end{block}
+					\end{center}	
+				\end{column}
+				
+				\begin{column}{0.5\textwidth}
+					\begin{center}
+						\begin{figure}[hbt!]
+							
+							\includegraphics[scale=0.06]{media/databases.png}
+						\end{figure}					
+					\end{center}	
+				\end{column}
+			\end{columns}
+			
+			\begin{columns}
+				\begin{column}{0.5\textwidth}
+					\begin{center}
+						Pros:\\
+						\begin{enumerate}
+							\item Osiągnięcie kwantowego przyspieszenia
+							\item Bardzo użyteczne dla IoT
+						\end{enumerate}	
+					\end{center}	
+				\end{column}
+				
+				\begin{column}{0.5\textwidth}
+					\begin{center}
+					 	Cons:\\
+						\begin{enumerate}
+							\item Kosztowny "Oracle" : $O(N)$
+							\item Zmiana elementu szukanego $ \longrightarrow $ nowy "Oracle"
+							\item Rozmiar układu rośnie wraz z N
+							\item Trzeba być \textbf{niezłym} fizykiem
+						\end{enumerate}
+					\end{center}	
+				\end{column}
+			\end{columns}
+			\vspace{1em}
 	\end{frame}
 	
 	
@@ -1047,7 +1103,8 @@
 			\item skrypt "kubity.pdf", dr inż. Tomasz Gradowski 
 			\item \href{https://www.youtube.com/watch?v=puRu_wEsbAA}{nagrania YT "Wszechnica CFT PAN: Części 1-12",\\ mgr K. Kowalczyk-Murynka}
 			\item Wikipedia 
-			\item \href{https://robert.nowotniak.com/files/papers/grover.pdf}{"Algorytm Grovera"}, Dr Robert Nowotniak
+			\item \href{https://robert.nowotniak.com/files/papers/grover.pdf}{"Algorytm Grovera"}, dr Robert Nowotniak
+			\item \href{https://quantum-computing.ibm.com/}{IBM Quantum Experience}
 			\end{enumerate}
 			\vspace{0.5em}
 		\end{block}	
