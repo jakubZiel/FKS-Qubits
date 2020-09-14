@@ -37,7 +37,7 @@
 		\begin{block}{Notacja Diraca, "bra-ket"}
 			\vspace{0.5em}
 			Używana do opisu wektorów z tzw. \href{https://en.wikipedia.org/wiki/Hilbert_space}{przestrzeni Hilberta} oraz przy korzystaniu z operatora \href{https://en.wikipedia.org/wiki/Conjugate_transpose}{sprzężenia hermitowskiego}:
-			 $\ket{ket}\longrightarrow\bra{ket}$ 
+			 $\ket{ket}\longrightarrow\bra{bra}$ 
 			\\~\\
 			gdzie $\ket{ket}$ jest wektorem kolumnowym \\~\\
 			\centering
@@ -48,7 +48,7 @@
 			^{T}
 			$\\~\\
 			\flushleft
-			$\bra{ket}$ jest wektorem w postaci rzędu\\~\\ 
+			$\bra{bra}$ jest wektorem w postaci rzędu\\~\\ 
 			\centering
 			$
 			\begin{pmatrix}
@@ -122,14 +122,26 @@
 			\end{equation*}
 			gdzie $0\leq\phi\leq\pi$ i $0\leq\theta\leq2\pi$\\~\\
 			Pozwala to na przedstawienie kubitu jako sfery Blocha.
-			\vspace{0.5em}
 		\end{block}
-		\begin{figure}[hbt!]
-			\centering
-			\includegraphics[scale=0.8]{media/bloch.png}
-		\end{figure}		
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{center}
+					\begin{figure}[hbt!]
+						\includegraphics[scale=0.7]{media/bloch.png}
+					\end{figure}
+				\end{center}	
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{center}
+					\begin{figure}[hbt!]
+						\includegraphics[scale=0.3]{media/qsphere.jpeg}
+					\end{figure}
+				\end{center}	
+			\end{column}
+		\end{columns}		
 	\end{frame}
-
+	
 	\begin{frame}{Pomiar stanu kubitu}
 		\begin{block}{}
 			\vspace{0.5em}
@@ -158,6 +170,7 @@
 			\includegraphics[scale=0.33]{media/foton_pomiar.png}
 		\end{figure}
 	\end{frame}
+
 	
 	\begin{frame}{Podstawowe operacje na kubitach}
 		\begin{block}{   }
@@ -1105,6 +1118,7 @@
 			\item Wikipedia 
 			\item \href{https://robert.nowotniak.com/files/papers/grover.pdf}{"Algorytm Grovera"}, dr Robert Nowotniak
 			\item \href{https://quantum-computing.ibm.com/}{IBM Quantum Experience}
+			\item \href{https://qiskit.org/textbook/ch-algorithms/teleportation.html}{Qiskit - Quantum teleportaion}
 			\end{enumerate}
 			\vspace{0.5em}
 		\end{block}	
